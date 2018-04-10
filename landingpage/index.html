@@ -1,148 +1,149 @@
+<!--  Lab 1 - Landing Page
+      Chaeyoon Kim
+      April 6, 2018 -->
+
 <html>
-<head>
-  <title>Bad Jokes!</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link href="https://fonts.googleapis.com/css?family=Hind|IBM+Plex+Serif:400i|Playfair+Display" rel="stylesheet">
-</head>
+  <head>
+    <title>Bad Jokes!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind|IBM+Plex+Serif:400i|Playfair+Display" rel="stylesheet">
+    <!-- meta adapted from: https://github.com/twbs/bootstrap/issues/1813 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<body>
-<div class="wrapper">
-<section>
-  <nav class="navbar navbar">
-  <ul class="nav navbar-nav">
-  <li><a class="active" href="#">Home</a>
-  <li><a href="#">Animal Jokes</a>
-  <li><a href="#">Food Jokes</a>
-  <li><a href="#">Celebrity Jokes</a>
-  <li><a href="#">Cats!</a>
-  <li><a href="#">Contact Us</a>
-  </ul>
-</nav>
-</section>
+  <body>
+    <div class="wrapper">
+      <nav id="navbar">
+        <!-- checkbox adapted from: https://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack -->
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check">
+          <div></div>
+          <div></div>
+          <div></div></label>
+    		<ul id="nav">
+    			<li><a class="active" href="#">Home</a></li>
+    			<li><a href="#">Animal Jokes</a></li>
+    			<li><a href="#">Food Jokes</a></li>
+    			<li><a href="#">Celebrity Jokes</a></li>
+    			<li><a href="#">Cats!</a></li>
+    			<li><a href="#">Contact Us</a></li>
+    		</ul>
+    	</nav>
 
+      <section id="main">
+      		<div class="textbox">
+      			<h1>Bad jokes are the best jokes.</h1>
+      			<p id="intro">We have bad jokes about a bunch of different topics!<br />Click the button below to start laughing!</p>
+      			<a href="#"><input type="submit" value="Tell me a bad joke!" /></a></div>
+      </section>
 
-<section>
-<article class="main">
-<div class="textbox">
-<h1>Bad jokes are the best jokes.</h1>
-<p class = "intro">We have bad jokes about a bunch of different topics!<br>Click the button below to start laughing!</p>
-<a href="#">
-<input type="submit" value="Tell me a bad joke!">
-</a>
-</div>
-</article>
-</section>
+      <!-- tooltip adapted from: https://www.w3schools.com/css/css_tooltip.asp -->
+      <section>
+        <div class="textbox">
+          <h2>Bad jokes of the day/everyday:</h2>
+          <div class="row">
+            <div class="column">
+              <div class="tooltip">
+                <p><br>Why does Piglet smell?</p>
+                <span class="tooltiptext"><br><br>Because he always plays with Pooh!</span>
+              </div>
+            </div>
+            <div class="column">
+              <div class="tooltip">
+                <p><br>Why don't they play poker in the jungle?</p>
+                <span class="tooltiptext"><br><br>Too many cheetahs.</span>
+              </div>
+            </div>
+            <div class="column">
+              <div class="tooltip">
+                <p><br>What did the buffalo say when his son left?</p>
+                <span class="tooltiptext"><br><br>Bison!</span>
+              </div>
+            </div>
+            <div class="column">
+              <div class="tooltip">
+                <p><br>Did you hear about the two thieves who stole a calendar?</p>
+                <span class="tooltiptext"><br><br>They each got six months.</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section>
-<article class="today-joke">
-  <div class="textbox">
-<h2>Bad jokes of the day/everyday:</h2>
-<div class="row">
-<div class="column">
-  <article>
-  <div class="tooltip">
-  <p><br>Why does Piglet smell?
-  <span class="tooltiptext"><br><br>Because he always plays with Pooh!</p>
-  </div>
-  </article>
-</div>
-<div class="column">
-  <article>
-  <div class="tooltip">
-  <p><br>Why don't they play poker in the jungle?
-  <span class="tooltiptext"><br><br>Too many cheetahs.</span>
-  </div>
-  </article>
-</div>
-<div class="column">
-  <article>
-  <div class="tooltip">
-  <p><br>What did the buffalo say when his son left?
-  <span class="tooltiptext"><br><br>Bison!</span>
-  </div>
-  </article>
-</div>
-<div class="column">
-  <article>
-  <div class="tooltip">
-  <p><br>Did you hear about the two thieves who stole a calendar?
-  <span class="tooltiptext"><br><br>They each got six months.</span>
-  </div>
-  </article>
-</div>
-</div>
-</div>
-</article>
-</section>
+      <section id="submission">
+        <h2>Tell us a bad joke to be featured!</h2>
+        <form>
+          <!-- <label for "newjoke"></label> <<< Is this necessary?-->
+          <p><input type="text" id="newjoke" name="submitjoke" placeholder="It better be bad!">
+          <br><input type="submit" value="Submit!"></p>
+        </form>
+      </section>
 
-<section>
-<article class="submission">
-<h2>Tell us a bad joke to be featured!</h2>
-<form>
-<!-- <label for "newjoke"></label> <<< Is this necessary?-->
-<p><input type="text" id="newjoke" name="joke" placeholder="It better be bad!">
-<br><input type="submit" value="Submit!">
-</form>
-</article>
-</section>
+      <section id="cat-gallery">
+      	<div class="textbox">
+      		<h2>I also really like cats.</h2>
+      		<p>Here are some pictures of cute cats. <br /> <br />
+            <img src="images/catA.jpg" alt="cat1">
+            <img src="images/catB.jpg" alt="cat2">
+            <img src="images/catC.jpg" alt="cat3">
+            <img src="images/catD.jpg" alt="cat4">
+            <img src="images/catE.jpg" alt="cat5">
+            <img src="images/catF.jpg" alt="cat6">
+            <img src="images/catG.jpeg" alt="cat7">
+            <img src="images/catH.jpg" alt="cat8">
+            <img src="images/catI.jpg" alt="cat9">
+            <img src="images/catJ.jpg" alt="cat10">
+            <img src="images/catK.jpg" alt="cat11">
+            <img src="images/catL.jpg" alt="cat13">
+          </p>
+      	</div>
+      </section>
 
-<section>
-  <article class="cat-gallery">
-<div class="textbox">
-<h2>I also really like cats.</h2>
-<p> Here are some pictures of cute cats.<br>
-  <!-- Why won't these images update??-->
-  <img src="images/cat1.jpg" alt="cat1">
-  <img src="images/cat2.jpg" alt="cat2">
-  <img src="images/cat3.jpg" alt="cat3">
-  <img src="images/cat4.jpg" alt="cat4">
-  <img src="images/cat5.jpg" alt="cat5">
-  <img src="images/cat6.webp" alt="cat6">
-  <img src="images/cat7.jpeg" alt="cat7">
-  <img src="images/cat8.jpg" alt="cat8">
-  <img src="images/cat9.jpg" alt="cat9">
-  <img src="images/cat10.jpg" alt="cat10">
-  <img src="images/cat11.jpg" alt="cat11">
-  <img src="images/cat12.jpg" alt="cat12">
-  <img src="images/cat13.jpg" alt="cat13">
+      <section id="newsletter">
+      	<h2>Sign up to join our newsletter!</h2>
+      	<form>
+      		<p><input id="email" name="address" type="text" placeholder="email address" />
+      		<br /><input type="submit" value="Sign me up!" /></p>
+      	</form>
+      </section>
+    </div>
 
-
-  <!-- <div class="row">
-     <div class="column">
-    <img src="images/cat1.jpg" alt="cat1" style="width:100%">
-    <img src="images/cat2.jpg" alt="cat2" style="width:100%">
-    <img src="images/cat3.jpg" alt="cat3" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/cat4.jpg" alt="cat4" style="width:100%">
-    <img src="images/cat5.jpg" alt="cat5" style="width:100%">
-    <img src="images/cat6.webp" alt="cat6" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/cat7.jpeg" alt="cat7" style="width:100%">
-    <img src="images/cat8.jpg" alt="cat8" style="width:100%">
-    <img src="images/cat9.jpg" alt="cat9" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/cat10.jpg" alt="cat10" style="width:100%">
-    <img src="images/cat11.jpg" alt="cat11" style="width:100%">
-    <img src="images/cat12.jpg" alt="cat12" style="width:100%">
-    <img src="images/cat13.jpg" alt="cat13" style="width:100%">
-  </div>
-  </div> -->
-</div>
-</article>
-</section>
-
-
-</div>
-</body>
-
-<footer>
-  <ul class="contact">
-  <li><a href="#">Facebook</a>
-  <li><a href="#">Instagram</a>
-  <li><a href="#">Twitter</a>
-  </ul>
-</footer>
+    <footer>
+    	<div>
+    		<p>Jokes by category:</p>
+    		<ul id="category">
+    			<li><a href="#">Animal Jokes</a></li>
+    			<li><a href="#">Food Jokes</a></li>
+    			<li><a href="#">Celebrity Jokes</a></li>
+    			<li><a href="#">Political Jokes</a></li>
+    			<li><a href="#">Miscellaneous Jokes</a></li>
+    			<li><a href="#">Puns</a></li>
+    			<li><a href="#">Anti-jokes</a></li>
+    		</ul>
+    	</div>
+    	<div>
+    		<p>Like what you see? <br />Follow us!</p>
+    		<ul id="follow">
+    			<li><a href="#">Facebook</a></li>
+    			<li><a href="#">Instagram</a></li>
+    			<li><a href="#">Twitter</a></li>
+    			<li><a href="#">Snapchat</a></li>
+    			<li><a href="#">Venmo</a></li>
+    			<li><a href="#">Youtube</a></li>
+    		</ul>
+    	</div>
+    	<div>
+    		<p>Learn more:</p>
+    		<ul id="about">
+    			<li><a href="#">About Us</a></li>
+    			<li><a href="#">Our Leadership</a></li>
+    			<li><a href="#">Why Bad Jokes</a></li>
+    			<li><a href="#">Join Us</a></li>
+    			<li><a href="#">Press</a></li>
+    			<li><a href="#">Terms of Use</a></li>
+    			<li><a href="#">Privacy Policy</a></li>
+    		</ul>
+    	</div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,206 @@
+<!--  Lab 2 - Buzzfeed
+      Chaeyoon Kim
+      April 9, 2018 -->
+
+<html>
+  <head>
+    <title>Buzzfeed</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i|IBM+Plex+Serif|Lobster|Noto+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="intro">
+      <h1>What Instagram account should you follow?</h1>
+      <p>Answer some questions about cats to find the instagram account you should follow.</p>
+    </div>
+
+    <form>
+      <div class="quiz-question">
+        <h2>Which cat do you like the most?</h2>
+        <div class="row">
+          <input type="radio" name="first_cats" id="betches1" class="hidden-input" value="betches" />
+          <label for="betches1">
+            <img src="images/betches1.jpg" />
+          </label>
+          <input type="radio" name="first_cats" id="cashcat1" class="hidden-input" value="cashcats" />
+          <label for="cashcat1">
+            <img src="images/cashcat1.jpg" />
+          </label>
+          <input type="radio" name="first_cats" id="ex1" class="hidden-input" value="textsfromyourex" />
+          <label for="ex1">
+            <img src="images/ex1.jpg" />
+          </label>
+        </div>
+        <div class="row">
+          <input type="radio" name="first_cats" id="existentialist1" class="hidden-input" value="textsfromyourexistentialist" />
+          <label for="existentialist1">
+            <img src="images/existentialist1.jpg" />
+          </label>
+          <input type="radio" name="first_cats" id="quarter1" class="hidden-input" value="quarterlifepoetry" />
+          <label for="quarter1">
+            <img src="images/quarter1.jpg" />
+          </label>
+          <input type="radio" name="first_cats" id="tinygentle2" class="hidden-input" value="tinygentleasians" />
+          <label for="tinygentle2">
+            <img src="images/tinygentle2.jpg" />
+          </label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h2>Pick another cat</h2>
+        <div class="row">
+          <input type="radio" name="second_cats" id="tinygentle3" class="hidden-input" value="tinygentleasians" />
+          <label for="tinygentle3">
+            <img src="images/tinygentle3.jpg" />
+          </label>
+          <input type="radio" name="second_cats" id="betches4" class="hidden-input" value="betches" />
+          <label for="betches4">
+            <img src="images/betches4.jpg" />
+          </label>
+          <input type="radio" name="second_cats" id="ex3" class="hidden-input" value="textsfromyourex" />
+          <label for="ex3">
+            <img src="images/ex3.jpg" />
+          </label>
+        </div>
+        <div class="row">
+          <input type="radio" name="second_cats" id="quarter4" class="hidden-input" value="quarterlifepoetry" />
+          <label for="quarter4">
+            <img src="images/quarter4.jpg" />
+          </label>
+          <input type="radio" name="second_cats" id="existentialist4" class="hidden-input" value="textsfromyourexistentialist" />
+          <label for="existentialist4">
+              <img src="images/existentialist4.jpeg" />
+          </label>
+          <input type="radio" name="second_cats" id="cashcat4" class="hidden-input" value="cashcats" />
+          <label for="cashcat4">
+            <img src="images/cashcat4.jpeg" />
+          </label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h2>What do you think cats think about the most?</h2>
+        <div class="row">
+          <div class="column">
+          <input type="radio" name="text_answer" id="betches_text" class="hidden-input" value="betches" />
+          <label for="betches_text"><p>Their followers-to-follows ratio</p></label>
+      </div>
+      <div class="column">
+          <input type="radio" name="text_answer" id="tinygentle_tex" class="hidden-input" value="tinygentleasians" />
+          <label for="tinygentle_tex"><p>How some children are just so darn chubby</p></label>
+        </div>
+        <div class="column">
+          <input type="radio" name="text_answer" id="quarter_text" class="hidden-input" value="quarterlifepoetry" />
+          <label for="quarter_text"><p>Their grim prospects of life</p></label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="column">
+          <input type="radio" name="text_answer" id="existential_text" class="hidden-input" value="textsfromyourexistentialist" />
+          <label for="existential_text"><p>The meaning of their nine lives</p></label>
+        </div>
+        <div class="column">
+          <input type="radio" name="text_answer" id="ex_text" class="hidden-input" value="textsfromyourex" />
+          <label for="ex_text"><p>That psycho they hooked up with once</p></label>
+        </div>
+        <div class="column">
+          <input type="radio" name="text_answer" id="cashcat_text" class="hidden-input" value="cashcats" />
+          <label for="cashcat_text"><p>The socio-economic status of their owners</p></label>
+        </div>
+      </div>
+      </div>
+
+      <div class="quiz-question">
+        <h2>Which is your favorite cat head?</h2>
+        <div class="row">
+          <input type="radio" name="cat_heads" id="ex_head" class="hidden-input" value="textsfromyourex" />
+          <label for="ex_head">
+            <img src="images/ex_head.jpg" />
+          </label>
+          <input type="radio" name="cat_heads" id="quarter_head" class="hidden-input" value="quarterlifepoetry" />
+          <label for="quarter_head">
+            <img src="images/quarter_head.jpg" />
+          </label>
+          <input type="radio" name="cat_heads" id="existentialist_head" class="hidden-input" value="textsfromyourexistentialist" />
+          <label for="existentialist_head">
+            <img src="images/existentialist_head.jpg" />
+          </label>
+        </div>
+        <div class="row">
+          <input type="radio" name="cat_heads" id="tinygentle_head" class="hidden-input" value="tinygentleasians" />
+          <label for="tinygentle_head">
+            <img src="images/tinygentle_head.jpg" />
+          </label>
+          <input type="radio" name="cat_heads" id="cashcat_head" class="hidden-input" value="cashcats" />
+          <label for="cashcat_head">
+            <img src="images/cashcat_head.jpg" />
+          </label>
+          <input type="radio" name="cat_heads" id="betches_head" class="hidden-input" value="betches" />
+          <label for="betches_head">
+            <img src="images/betches_head.jpg" />
+          </label>
+        </div>
+      </div>
+
+
+      <div class="quiz-question">
+        <h2>Pick your alcoholic cat of choice</h2>
+        <div class="row">
+          <input type="radio" name="alcoholic_cat" id="existential_alc" class="hidden-input" value="textsfromyourexistentialist" />
+          <label for="existential_alc">
+            <img src="images/existential_alc.jpg" />
+          </label>
+          <input type="radio" name="alcoholic_cat" id="ex_alc" class="hidden-input" value="textsfromyourex" />
+          <label for="ex_alc">
+            <img src="images/ex_alc.jpg" />
+          </label>
+          <input type="radio" name="alcoholic_cat" id="cashcat_alc" class="hidden-input" value="cashcats" />
+          <label for="cashcat_alc">
+            <img src="images/cashcat_alc.jpg" />
+          </label>
+        </div>
+        <div class="row">
+          <input type="radio" name="alcoholic_cat" id="tinygentle_alc" class="hidden-input" value="tinygentleasians" />
+          <label for="tinygentle_alc">
+            <img src="images/tinygentle_alc.jpg" />
+          </label>
+          <input type="radio" name="alcoholic_cat" id="betchs_alc" class="hidden-input" value="betches" />
+          <label for="betchs_alc">
+            <img src="images/betchs_alc.jpg" />
+          </label>
+          <input type="radio" name="alcoholic_cat" id="quarter_alc" class="hidden-input" value="quarterlifepoetry" />
+          <label for="quarter_alc">
+            <img src="images/quarter_alc.jpg" />
+          </label>
+        </div>
+      </div>
+
+      <div id="done">
+        <button id="done-button">Done!</button>
+        <!-- Modal adapted from https://www.w3schools.com/howto/howto_css_modals.asp-->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p id="modal-text">Some text in modal...</p>
+              <div id="insta-image">
+                <img src="images/placeholder.png" />
+              </div>
+              <p id="result-text">Some text in modal...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

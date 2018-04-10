@@ -1,0 +1,258 @@
+/* Lab 2 - Buzzfeed
+Chaeyoon Kim
+April 9, 2018 */
+
+body {
+  background: #f0efef;
+  font-size: 20px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+input[type=radio] {
+  display: none;
+  position: absolute;
+}
+
+input[type=radio] + label>img, input[type=radio] + label>p {
+  cursor:pointer;
+  transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=radio]:hover + label>img, input[type=radio]:hover + label>p {
+  box-shadow: 0 0 8px 8px #f0efef;
+}
+
+input[type=radio]:checked + label>img, input[type=radio]:checked + label>p{
+    box-shadow: 0 0 8px 8px #F9E79F;
+    transition-duration: 0.5s;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  color: #1A5276;
+}
+
+#intro p {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 28px;
+  color: #877e9f;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 40px;
+  color: white;
+  width: 80%;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#intro {
+  margin-bottom: 0;
+  margin-left: 45px;
+}
+
+form .quiz-question {
+  display: flex;
+  background: #c2d4dd;
+  border-radius: 30px;
+  border: dashed 3px;
+  border-color: #b0aac0;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  padding: 10px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.row {
+  position:relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  position:relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.row img, .row p {
+  display: flex;
+  position: relative;
+  width: 75%;
+  height: auto;
+  border-radius: 30px;
+  border: solid 8px;
+  border-color: #efede3;
+  margin: 10px;
+  align-items: center;
+}
+
+.row p {
+  height: 120px;
+  font-size: 18px;
+  background-color: #faf9f6;
+  padding: 10px;
+}
+
+body #done {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#done-button {
+  cursor: pointer;
+  background-color: #608ea7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 30px;
+  box-shadow: 0 5px 0 #304957;
+  outline: 0;
+  transition: all .1s linear;
+}
+
+#done-button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+  outline: 0;
+}
+
+#done-button:hover {
+  background-color: #cba0bc
+}
+
+/*  Modal adapted from https://www.w3schools.com/howto/howto_css_modals.asp  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#insta-image {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#insta-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: dotted 4px;
+  border-color: #b0aac0;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 8px;
+    z-index: 9999;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#result-text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-header {
+    background-color: #b0aac0;
+    color: white;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    height: 40px;
+    align-self: flex-start;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #intro p {
+    font-size: 20px;
+  }
+  .row p {
+    font-size: 12px;
+  }
+}
